@@ -1,47 +1,79 @@
-body{
-	background: #D4C0BF;
+body {
+  background: linear-gradient(-45deg, #7A35BC, #CF336C, #385EBC, #CF336C);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
 }
-h1{
-	text-align: center;
-	color: #6E6E70;
-	font-family: Comic Sans MS, cursive;
-}
-.card1{
-	background: #C2949E;
-	height: 300px;
-	width: 600px;
-	border: 5px outset #96797E;
-	border-radius: 15px;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 3px;
-	color: #353159;
-	font-family: Comic Sans MS, cursive;
-}
-.card2{
-	background: #C2949E;
-	height: 300px;
-	width: 600px;
-	border: 5px outset #96797E;
-	border-radius: 15px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 10px;
-	padding: 3px;
-	color: #353159;
-	font-family: Comic Sans MS, cursive;
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 
 }
-.card3{
-	background: #C2949E;
-	height: 170px;
-	width: 600px;
-	border: 5px outset #96797E;
-	border-radius: 15px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 10px;
-	padding: 3px;
-	color: #353159;
-	font-family: Comic Sans MS, cursive;
+.scroll-downs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  
+  width :34px;
+  height: 55px;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}
+
+h1{
+	color: #FFFAFA;
+	font-family: Palatino Linotype;
+	font-size: 60px;
+
+}
+
+h2{
+	color: #FFFAFA;
+	font-family: Palatino Linotype;
+	font-size: 40px;
+	
+}
+
+h3{
+	color: #FFFAFA;
+	font-family: Palatino Linotype;
+	
+}
+.gig{
+	color: #FFFAFA;
+	font-family: Palatino Linotype;
+
 }
